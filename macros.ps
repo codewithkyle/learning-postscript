@@ -1,0 +1,34 @@
+%!PS
+/csquare {
+    newpath
+    0 0 moveto
+    0 1 rlineto
+    1 0 rlineto
+    0 -1 rlineto
+    closepath
+    setrgbcolor
+    fill
+} def
+
+% sets coordinate system scale (20/72 inches)
+20 20 scale
+
+5 5 translate
+1 0 0 csquare
+
+1 0 translate
+0 1 0 csquare
+
+1 0 translate
+0 0 1 csquare
+
+/l {
+    newpath
+    moveto
+    rlineto
+    stroke
+} def
+
+1 setlinewidth
+0.5 setgray
+5 0 2 2 l

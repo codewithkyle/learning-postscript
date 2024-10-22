@@ -1,0 +1,28 @@
+%!PS
+/Times-Roman findfont
+
+% font defaults to 1pt
+12 scalefont
+
+setfont
+newpath
+100 200 moveto
+
+% () indicate a string
+(Example 3) show
+
+/Times-Roman findfont
+32 scalefont
+setfont
+100 400 translate
+45 rotate
+2 1 scale
+newpath
+0 0 moveto
+
+% charpath says to treat chars in string as a path
+(Example 4) true charpath
+
+0.5 setlinewidth
+0.4 setgray
+stroke
