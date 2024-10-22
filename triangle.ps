@@ -1,0 +1,22 @@
+%!PS
+newpath
+100 200 moveto
+200 250 lineto
+100 300 lineto
+
+% joins the first vertex with the last vertex
+closepath
+
+% saves the current path (stroke & fill destroy paths)
+gsave
+
+0.5 setgray
+fill
+
+% restores saved path
+grestore
+
+4 setlinewidth
+0.75 setgray
+stroke
+
